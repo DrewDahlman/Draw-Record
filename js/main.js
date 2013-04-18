@@ -78,6 +78,7 @@
 
 		self.recording = function() {
 			if (_recording) {
+				ctx.lineWidth = Math.random() * 3;
 				var x_val = $("#x").text() + _x + ",";
 				var y_val = $("#y").text() + _y + ",";
 
@@ -117,7 +118,7 @@
 			ctx.clearRect(0, 0, 1024, 768)
 
 			_timer = setInterval(function() {
-
+				ctx.lineWidth = Math.random() * 3;
 				_x = x[i];
 				_y = y[i];
 				ctx.beginPath();
