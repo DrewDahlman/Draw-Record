@@ -17,7 +17,7 @@
 
 		self.init = function() {
 
-			$(body).bind('touchstart'function(event){
+			$(document).bind('touchstart',function(event){
 				event.preventDefautl();
 			});
 			_wrapper.mousedown(self.record);
