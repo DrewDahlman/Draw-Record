@@ -13,6 +13,7 @@
 		<!-- STYLES -->
 		<style>
 		*{margin: 0px;}
+		body{font-family:"Helvetica";}
 		#wrapper{height: 768px; width: 1024px; position: relative;}
 		</style>
 
@@ -22,11 +23,14 @@
 
 	</head>
 	<body>
+		This experiment records your movements on canvas and will allow you to see them redrawn at draw speed, or saved and shared.
 		<div id='wrapper'>
 			<canvas id='canvas' height='768' width='1024'></canvas>
 		</div>
 		<div id='recorder'>
-			<textarea id='x'></textarea>
+			X:
+			<textarea id='x'></textarea><br/>
+			Y:
 			<textarea id='y'></textarea><br/>
 			<input type='button' id='draw_it' value='draw it'>  </input><input type='button' id='save_it' value='save it'></input>  </input><input type='button' id='clear_it' value='clear it'></input>
 		</div>
